@@ -53,8 +53,15 @@ ActiveRecord::Schema.define(version: 20150529113959) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "widgets", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "stock"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   add_foreign_key "friendships", "users"
   add_foreign_key "user_values", "\"values\"", column: "value_id"
   add_foreign_key "user_values", "users"
 end
-
