@@ -16,12 +16,45 @@ ActiveRecord::Schema.define(version: 20140707111715) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "widgets", force: true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "stock"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "friendships", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "friend_id"
+    t.boolean  "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
+  add_index "friendships", ["user_id"], name: "index_friendships_on_user_id", using: :btree
+
+  create_table "user_values", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "value_id"
+    t.integer  "count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "user_values", ["user_id"], name: "index_user_values_on_user_id", using: :btree
+  add_index "user_values", ["value_id"], name: "index_user_values_on_value_id", using: :btree
+
+  create_table "users", force: :cascade do |t|
+    t.string   "email"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "password_digest"
+    t.text     "bio"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "values", force: :cascade do |t|
+    t.string   "word"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "friendships", "users"
+  add_foreign_key "user_values", "\"values\"", column: "value_id"
+  add_foreign_key "user_values", "users"
 end
+
