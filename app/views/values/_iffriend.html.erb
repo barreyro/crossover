@@ -1,0 +1,16 @@
+<div id='addedvalues'>
+  <%= render partial: 'values/addedvalues', locals: {values: values} %>
+</div>
+
+<div id='possiblevalues'>
+  <h3>click to add to <%= friend.first_name %>'s value list</h3>
+  <%= render partial: 'values/possiblevalues', locals: {moreValues: moreValues, friend: friend} %>
+
+  <%= button_tag 'More Values',  method: :get, action: "/friend/#{friend.id}/values", id: 'morevalue_button' %>
+
+  <%= form_tag(("/friends/#{friend.id}/addvalue"), method: :post, id: 'addvalue_form') do %>
+    <%= text_field_tag :word, nil, placeholder: 'value' %>
+    <%= submit_tag 'add' %>
+  <% end %>
+
+</div>

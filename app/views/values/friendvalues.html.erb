@@ -1,0 +1,13 @@
+<div class="container">
+  <h2> <%= friend.first_name %>'s values </h2>
+  <h3><%= friend.bio %></h3></br>
+  <div id='friend_wrapper'>
+    <% if values.length > 0 %>
+      <%= render partial: 'values/iffriend', locals: {moreValues: moreValues, friend: friend, values: values, request_sent: request_sent}%>
+    <% else %>
+      <%= render partial: 'values/ifnotfriend', locals: {friend: friend, values: values, request_received: request_received, request_sent: request_sent}%>
+    <% end %>
+
+  </div>
+
+</div>
