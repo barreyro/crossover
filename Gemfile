@@ -38,3 +38,5 @@ gem 'puma'
 # gem 'debugger', group: [:development, :test]
 
 gem 'faker'
+
+gem 'bcrypt'
