@@ -1,0 +1,12 @@
+<ul id='friendlist'>
+  <% friends.each do |friend| %>
+    <% if friend.id != current_user.id %>
+      <li>
+        <a href='/friends/<%= friend.id %>'><%= friend.first_name %> <%= friend.last_name %></a>
+
+        <%= button_to button, friend_path(friend), method: (button == 'add' ? :put : :delete), class: button %>
+
+      </li>
+    <% end %>
+  <% end %>
+</ul>
