@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <div class="wrapper">
+    <body>
+      <header>
+        <h1>Endorse.Me</h1>
+        <% if current_user %>
+          <%= render 'pages/logedin' %>
+        <% else %>
+          <%= render 'pages/logedout' %>
+        <% end %>
+      </header>
+      <%= yield %>
+    </body>
+  </div>
 
 </body>
 </html>
