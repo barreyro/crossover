@@ -1,16 +1,22 @@
 <div id='addedvalues'>
+  <h3> <%= friend.first_name %>'s endorsements:</h3>
   <%= render partial: 'values/addedvalues', locals: {values: values} %>
 </div>
 
 <div id='possiblevalues'>
-  <h3>click to add to <%= friend.first_name %>'s value list</h3>
-  <%= render partial: 'values/possiblevalues', locals: {moreValues: moreValues, friend: friend} %>
-
-  <%= button_tag 'More Values',  method: :get, action: "/friend/#{friend.id}/values", id: 'morevalue_button' %>
-
+  <h3>Endorse <%= friend.first_name %>:</h3>
   <%= form_tag(("/friends/#{friend.id}/addvalue"), method: :post, id: 'addvalue_form') do %>
     <%= text_field_tag :word, nil, placeholder: 'value' %>
     <%= submit_tag 'add' %>
   <% end %>
 
 </div>
+
+<div id='trendingvalues'>
+  <br>
+  <h3>click on possible skills to endorse:</h3>
+  <%= render partial: 'values/possiblevalues', locals: {moreValues: moreValues, friend: friend} %>
+
+  <%= button_tag 'see more',  method: :get, action: "/friend/#{friend.id}/values", id: 'morevalue_button' %>
+</div>
+
