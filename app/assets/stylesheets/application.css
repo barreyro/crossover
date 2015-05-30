@@ -15,8 +15,11 @@
  */
 
  body {
-  background-color: white;
-  color: #2ecc71;
+  /*background-image: url(/assets/stone.png);
+  */
+  background-color: #2ecc71;
+  background-repeat: repeat;
+  color: white;
  }
 
 .wrapper {
@@ -27,8 +30,6 @@
 .navright{
   width: 30vh;
   text-align: right;
-  float: right;
-  margin-right: 2em;
 }
 .container {
   width: 90%;
@@ -86,11 +87,12 @@
   border: none;
   font-size: 12px !important;
   min-height: 2em;
+  font-family: 'Muli', sans-serif !important;
 }
 
 .userInfoCont{
   width: 30%;
-  padding-right: 20px ;
+  padding-right: 1.5%;
   float: right;
   text-align: right;
 }
@@ -99,7 +101,7 @@
 }
 
 header{
-  background-color: white;
+  background-color: transparent;
   margin: 10px;
   border-bottom: 2px solid #B0C4DE;
   display: inline-block;
@@ -108,8 +110,9 @@ header{
 }
 
 h1{
-  font-family: 'Ovo', sans-serif;
-  color: #2ecc71;
+  font-family: 'Muli', sans-serif;
+  font-style: bold;
+  color: white;
   position: relative;
   float: left;
   font-size: 3em;
@@ -128,24 +131,33 @@ h3{
   font-size: 1em;
 }
 
-#intro{
-  font-family: 'Muli', sans-serif;
-  font-size: 3em;
-  margin-top: 5em;
-  font-weight: 1000;
-  font-weight: bolder;
-  text-decoration: bold;
-  /*-webkit-text-stroke: 0.001px #5B80B0;*/
-  color: white;
-  text-shadow:
-      2.5px 2.5px 1px #5A7AA3,
-    -1px -1px 1px #5A7AA3,
-     1px -1px 1px #5A7AA3,
-     -1px 1px 1px #5A7AA3,
-      2px 2px 1px #5A7AA3;
+.intro{
+
+  overflow: hidden;
+  min-height: 100px;
+  background-color: transparent;
+  font-family: 'Ovo', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  margin-top: 1em ;
+  padding-top: 1em;
+  width: 60%;
+  color: black;
+
 }
 
-
+#introq{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Ovo', sans-serif;
+  font-style: center;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1em;
+  font-weight: 1000;
+  color: black;
+}
 
 #value_words{
   font-family: 'Muli', sans-serif;
@@ -188,6 +200,25 @@ h4{
   font-size: 1.3em;
 }
 
+.super-wrapper{
+  width:100%;
+  position: relative;
+}
+
+.char1{
+  float: left;
+  width: 20%;
+}
+
+.char2{
+  float: left;
+  width: 40%;
+}
+
+.charfil{
+  float: left;
+  width:25%;
+}
 
 #request_sent_p{
   margin: 0 auto;
@@ -228,8 +259,6 @@ h4{
   font-family: 'Muli', sans-serif;
   margin-bottom: 10px;
 }
-
-
 
 #friendlist .button_to input{
   background: transparent;
@@ -288,7 +317,6 @@ ul#friendlist li {
   font-family: 'Muli', sans-serif;
 }
 
-
 ul#friendlist li h3 {
   position: absolute;
   bottom: -18px;
@@ -302,3 +330,12 @@ ul#friendlist a {
 ul#friendlist a:hover {
 }
 
+.superman {
+  margin-left: 3%;
+  float: left;
+  background-color: #e8b290;
+  box-shadow: 1em 0 0 0 #e8b290, 2em 0 0 0 #e8b290, 0 1em 0 0 #f7c4a9, 1em 1em 0 0 #f7c4a9, 2em 1em 0 0 #f7c4a9, 0 -1em 0 0 #f7c4a9, 1em -1em 0 0 #f7c4a9, 2em -1em 0 0 #f7c4a9, -1em 0 0 0 #f7c4a9, 3em 0 0 0 #f7c4a9, -1em -1em 0 0 #f7c4a9, 3em -1em 0 0 #f7c4a9, -1em 1em 0 0 #f7c4a9, 3em 1em 0 0 #f7c4a9, -2em -1em 0 0 #f7c4a9, -2em 0 0 0 #f7c4a9, -2em 1em 0 0 #f7c4a9, -2em -2em 0 0 #000000, -1em -2em 0 0 #f7c4a9, 0 -2em 0 0 #f7c4a9, 1em -2em 0 0 #f7c4a9, 2em -2em 0 0 #f7c4a9, 3em -2em 0 0 #f7c4a9, 4em -2em 0 0 #000000, 4em -1em 0 0 #f7c4a9, 5em -1em 0 0 #f7c4a9, 5em 0 0 0 #f7c4a9, 5em -2em 0 0 #f7c4a9, 5em -3em 0 0 #f7c4a9, 4em -3em 0 0 #f7c4a9, 3em -3em 0 0 #f7c4a9, 2em -3em 0 0 #f7c4a9, 1em -3em 0 0 #0f1434, 0 -3em 0 0 #f7c4a9, -1em -3em 0 0 #f7c4a9, 2em -4em 0 0 #0e1339, 3em -4em 0 0 #f7c4a9, 4em -4em 0 0 #f7c4a9, -1em -4em 0 0 #f7c4a9, 0 -4em 0 0 #f7c4a9, 1em -4em 0 0 #f7c4a9, -2em -3em 0 0 #f7c4a9, -3em -3em 0 0 #f7c4a9, -3em -4em 0 0 #0e1339, -2em -4em 0 0 #0e1339, -2em -5em 0 0 #0e1339, -1em -5em 0 0 #0e1339, 0 -5em 0 0 #0e1339, 1em -5em 0 0 #0e1339, 2em -5em 0 0 #0e1339, 3em -5em 0 0 #0e1339, 4em -5em 0 0 #0e1339, 5em -5em 0 0 #0e1339, 5em -4em 0 0 #0e1339, 6em -4em 0 0 #0e1339, 7em -4em 0 0 #0e1339, 7em -3em 0 0 #0e1339, 7em -2em 0 0 #0e1339, 7em -1em 0 0 #d1906a, 7em 0 0 0 #d1906a, 7em 1em 0 0 #d1906a, 5em 2em 0 0 #d1906a, 6em 2em 0 0 #d1906a, 4em 3em 0 0 #d1906a, 3em 3em 0 0 #e8b290, 2em 3em 0 0 #f6c4a9, 1em 3em 0 0 #f6c4a9, 2em 4em 0 0 #f6c4a9, 1em 4em 0 0 #c82129, 0 4em 0 0 #c82129, 3em 4em 0 0 #c82129, 4em 4em 0 0 #c82129, 5em 4em 0 0 #c82129, 6em 4em 0 0 #a31c22, 6em 5em 0 0 #084267, 6em 6em 0 0 #084267, 6em 7em 0 0 #efb286, 5em 7em 0 0 #00609d, 5em 6em 0 0 #00609d, 5em 5em 0 0 #00609d, 4em 5em 0 0 #00609d, 4em 6em 0 0 #00609d, 4em 7em 0 0 #00609d, 3em 7em 0 0 #00609d, 2em 7em 0 0 #00609d, 1em 7em 0 0 #00609d, 0 7em 0 0 #00609d, 0 6em 0 0 #00609d, 1em 6em 0 0 #00609d, 1em 5em 0 0 #00609d, 0 5em 0 0 #00609d, -1em 5em 0 0 #00609d, -1em 6em 0 0 #0a4361, -1em 7em 0 0 #fcbfad, 0 8em 0 0 #fdce04, 1em 8em 0 0 #c3212e, 2em 8em 0 0 #fdce04, 3em 8em 0 0 #fdce04, 4em 8em 0 0 #c3212e, 5em 8em 0 0 #fdce04, 5em 9em 0 0 #004b60, 5em 10em 0 0 #a31c23, 4em 10em 0 0 #c22629, 4em 9em 0 0 #005d96, 3em 9em 0 0 #992122, 2em 9em 0 0 #992122, 1em 9em 0 0 #005e9e, 0 9em 0 0 #005e9e, 0 10em 0 0 #ca2126, 1em 10em 0 0 #ca2126, 4em 0 0 0 #f7c4a9, 4em 1em 0 0 #f7c4a9, -3em -2em 0 0 #f7c4a9, -3em -1em 0 0 #f7c4a9, -3em 0 0 0 #f7c4a9, -3em 1em 0 0 #f7c4a9, -2em 2em 0 0 #f7c4a9, -1em 2em 0 0 #f7c4a9, 0 2em 0 0 #f7c4a9, 1em 2em 0 0 #f7c4a9, 2em 2em 0 0 #f7c4a9, 3em 2em 0 0 #f7c4a9, 4em 2em 0 0 #e8b290, 5em 1em 0 0 #e8b290, 6em 1em 0 0 #e8b290, 6em 0 0 0 #e8b290, 6em -1em 0 0 #e8b290, 6em -2em 0 0 #e8b290, 6em -3em 0 0 #e8b290, 6em -5em 0 0 #0e1434, 5em -6em 0 0 #0e1434, 4em -6em 0 0 #0e1434, 3em -6em 0 0 #0e1434, 2em -6em 0 0 #0e1434, 1em -6em 0 0 #0e1434, 0 -6em 0 0 #0e1434, -1em -6em 0 0 #0e1434, 2em 5em 0 0 #c42521, 2em 6em 0 0 #ffcb00, 3em 5em 0 0 #ffcb00, 3em 6em 0 0 #c42521, 7em 6em 0 0 #7f1517, 7em 5em 0 0 #7f1517, 7em 7em 0 0 #7f1517, 6em 9em 0 0 #7f1517, 6em 8em 0 0 #7f1517, 7em 8em 0 0 #7f1517, 8em 6em 0 0 #a31c20, 8em 7em 0 0 #a31c20, 8em 8em 0 0 #cb2026, 9em 8em 0 0 #a41b23, 8em 9em 0 0 #a41b23, 7em 9em 0 0 #a41b23;
+  height: 1em;
+  margin-top: 10em;
+  width: 1em;
+}
