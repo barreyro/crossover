@@ -1,13 +1,24 @@
 <div class="container">
-  <h2> <%= friend.first_name %>'s values </h2>
-  <h3><%= friend.bio %></h3></br>
+    <h2> [ <%= friend.first_name %> <%= friend.last_name%> ]</h2>
+  <div class="friendpage">
+
+    <h2>About <%= friend.first_name %>: </h2><br><%= friend.bio %></br>
+
+    <div id='addedvalues'>
+  <h2> <%= friend.first_name %>'s best endorsements</h2>
+  <% values[0..3].each do |value| %>
+    <h3><%= value.word %></h3>
+  <% end %>
+</div>
+
+  </div>
+
   <div id='friend_wrapper'>
     <% if values.length > 0 %>
       <%= render partial: 'values/iffriend', locals: {moreValues: moreValues, friend: friend, values: values, request_sent: request_sent}%>
     <% else %>
-      <%= render partial: 'values/ifnotfriend', locals: {friend: friend, values: values, request_received: request_received, request_sent: request_sent}%>
+      <%= render partial: 'values/ifnotfriend', locals: {friend: friend, values: values, request_received: true, request_sent: request_sent}%>
     <% end %>
-
   </div>
 
 </div>

@@ -3,7 +3,7 @@
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any styles
@@ -13,3 +13,415 @@
  *= require_tree .
  *= require_self
  */
+
+ body{
+  background-image: url(/assets/stone.png);
+  background-color: #2ecc71;
+  background-repeat: repeat;
+  color: white;
+ }
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.navright{
+  width: 30vh;
+  text-align: right;
+}
+.container {
+  width: 95%;
+  height: 100%;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.container #profile{
+  width: 58%;
+  float: left;
+}
+.container #bio{
+  text-align: center;
+  border: 3px solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: 'Muli', sans-serif;
+  color: #1c6551;
+  background-color: #ecf0f1;
+}
+
+.container #bio p{
+  font-family: 'Muli', sans-serif;
+  margin: 20px;
+  color: #1c6551;
+  border: 3px dotted black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.container #friends{
+  width: 38%;
+  margin-right: 10px;
+  float: right;
+  text-align: center;
+  border: 3px solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: 'Muli', sans-serif;
+  color: red !important;
+  background-color: #c0392b;
+}
+
+.container #values{
+  text-align: center;
+  border: 3px solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: 'Muli', sans-serif;
+  color: #1c6551;
+  background-color: #ecf0f1;
+}
+
+.container #values p{
+  font-family: 'Muli', sans-serif;
+  margin: 20px;
+  color: #1c6551;
+}
+
+.navbutton{
+  background-color: #ecf0f1;
+  border: none;
+  font-size: 12px !important;
+  min-height: 2em;
+  font-family: 'Muli', sans-serif !important;
+}
+
+.searchButton{
+  background-color: #7f8c8d;
+  border: none;
+  min-height: 2em;
+  font-family: 'Muli', sans-serif !important;
+}
+.main {
+  padding-top: 10px;
+}
+.userInfoCont{
+  width: 30%;
+  padding-right: 1.5%;
+  float: right;
+  text-align: right;
+}
+.signupform{
+  display: inline;
+}
+
+.searchBox{
+  background-color: white !important;
+}
+
+header{
+  background-color: transparent;
+  margin: 10px;
+  display: inline-block;
+  width: 100%;
+  height: 12vh;
+}
+
+h1{
+  font-family: 'Muli', sans-serif;
+  font-style: bold;
+  color: white;
+  position: relative;
+  float: left;
+  font-size: 3em;
+  margin: 20px;
+}
+
+h2{
+  font-family: 'Ovo', sans-serif;
+  margin: 20px;
+  color: #34495e;
+  font-size: 2em;
+}
+
+h3{
+  font-family: 'Muli', sans-serif;
+  font-size: 1em;
+}
+
+.intro{
+  overflow: hidden;
+  min-height: 100px;
+  background-color: transparent;
+  font-family: 'Ovo', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  margin-top: 1em ;
+  padding-top: 1.5em;
+  width: 60%;
+  color: white;
+}
+
+#introq{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Ovo', sans-serif;
+  font-style: center;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 1000;
+  color: white;
+}
+
+#value_words{
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5em;
+  margin: 20px;
+  color: black;
+}
+
+#value_words a {
+  text-decoration: none;
+  color: #7f8c8d !important;
+}
+#value_words a:hover {
+  color: #825741;
+  text-decoration: none;
+}
+#value_words a:visited {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+
+#more_value_words{
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5em;
+  margin: 20px;
+}
+
+#more_value_words a {
+  color: #ecf0f1
+  text-decoration: none;
+}
+#more_value_words a:hover {
+  color: #913499;
+  text-decoration: none;
+}
+
+h4{
+  font-family: 'Muli', sans-serif;
+  font-size: 1.3em;
+}
+
+.super-wrapper{
+  width:100%;
+  position: relative;
+}
+
+.char1{
+  float: left;
+  width: 20%;
+  color:white;
+  font-family: 'Muli', sans-serif;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 20px;
+}
+
+#friends h2{
+  color: white;
+  font-size: 30px;
+}
+
+.container h2{
+  color: #e74c3c;
+}
+
+
+.container .friendpage{
+  background-color: #bdc3c7;
+  width: 35%;
+  border: 3px solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  float: left;
+  margin-right: 4px;
+}
+
+#addedvalues, #possiblevalues, #trendingvalues {
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+#addedvalues h3, #possiblevalues h3, #trendingvalues h3 {
+  font-size: 25px;
+}
+
+#trendingvalues a {
+  font-size: 16px;
+}
+
+.container #friend_wrapper{
+  width: 55%;
+  float: right;
+  background-color: #e74c3c;
+  border: 3px solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  padding-bottom: 10px;
+  margin-right: 3em;
+  float: right;
+}
+
+.char2{
+  float: left;
+  width: 35%;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 20px;
+}
+
+.charfil{
+  font-family: 'Muli', sans-serif;
+  float: left;
+  width:35%;
+  color: black;
+  font-size: 19px;
+  text-align: left;
+  margin-top: 4.5em;
+  padding: 1em;
+  background-color: #e74c3c;
+  border: 4px solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+#request_sent_p{
+  margin: 0 auto;
+  width: 160px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border: 1.5px solid red;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  padding: 5px;
+}
+
+.button_to input{
+  background: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 10px;
+  padding: 5px;
+
+}
+
+#search input{
+  background: transparent;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border: 1.5px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 10px;
+}
+
+#friendlist .button_to input{
+  background: transparent;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+}
+
+
+input, textarea {
+  line-height: 1em;
+  font-size: 1em;
+  font-family: 'Muli', sans-serif;
+  border: 3px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+button{
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border: 1.5px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 10px;
+}
+
+select{
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid #B0C4DE;
+  background: transparent;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ececec;
+  text-decoration: underline;
+}
+
+ul#friendlist li {
+  position: relative;
+  margin: 10px auto;
+  font-family: 'Muli', sans-serif;
+}
+
+ul#friendlist li h3 {
+  position: absolute;
+  bottom: -18px;
+  left: 17px;
+  font-size: 2em;
+}
+ul#friendlist a {
+  font-size: 1.5em;
+  color: #ccc;
+}
+ul#friendlist a:hover {
+}
+.homenav{
+  display: inline;
+}
+.superman {
+  margin-left: 3%;
+  float: left;
+  background-color: #e8b290;
+  box-shadow: 1em 0 0 0 #e8b290, 2em 0 0 0 #e8b290, 0 1em 0 0 #f7c4a9, 1em 1em 0 0 #f7c4a9, 2em 1em 0 0 #f7c4a9, 0 -1em 0 0 #f7c4a9, 1em -1em 0 0 #f7c4a9, 2em -1em 0 0 #f7c4a9, -1em 0 0 0 #f7c4a9, 3em 0 0 0 #f7c4a9, -1em -1em 0 0 #f7c4a9, 3em -1em 0 0 #f7c4a9, -1em 1em 0 0 #f7c4a9, 3em 1em 0 0 #f7c4a9, -2em -1em 0 0 #f7c4a9, -2em 0 0 0 #f7c4a9, -2em 1em 0 0 #f7c4a9, -2em -2em 0 0 #000000, -1em -2em 0 0 #f7c4a9, 0 -2em 0 0 #f7c4a9, 1em -2em 0 0 #f7c4a9, 2em -2em 0 0 #f7c4a9, 3em -2em 0 0 #f7c4a9, 4em -2em 0 0 #000000, 4em -1em 0 0 #f7c4a9, 5em -1em 0 0 #f7c4a9, 5em 0 0 0 #f7c4a9, 5em -2em 0 0 #f7c4a9, 5em -3em 0 0 #f7c4a9, 4em -3em 0 0 #f7c4a9, 3em -3em 0 0 #f7c4a9, 2em -3em 0 0 #f7c4a9, 1em -3em 0 0 #0f1434, 0 -3em 0 0 #f7c4a9, -1em -3em 0 0 #f7c4a9, 2em -4em 0 0 #0e1339, 3em -4em 0 0 #f7c4a9, 4em -4em 0 0 #f7c4a9, -1em -4em 0 0 #f7c4a9, 0 -4em 0 0 #f7c4a9, 1em -4em 0 0 #f7c4a9, -2em -3em 0 0 #f7c4a9, -3em -3em 0 0 #f7c4a9, -3em -4em 0 0 #0e1339, -2em -4em 0 0 #0e1339, -2em -5em 0 0 #0e1339, -1em -5em 0 0 #0e1339, 0 -5em 0 0 #0e1339, 1em -5em 0 0 #0e1339, 2em -5em 0 0 #0e1339, 3em -5em 0 0 #0e1339, 4em -5em 0 0 #0e1339, 5em -5em 0 0 #0e1339, 5em -4em 0 0 #0e1339, 6em -4em 0 0 #0e1339, 7em -4em 0 0 #0e1339, 7em -3em 0 0 #0e1339, 7em -2em 0 0 #0e1339, 7em -1em 0 0 #d1906a, 7em 0 0 0 #d1906a, 7em 1em 0 0 #d1906a, 5em 2em 0 0 #d1906a, 6em 2em 0 0 #d1906a, 4em 3em 0 0 #d1906a, 3em 3em 0 0 #e8b290, 2em 3em 0 0 #f6c4a9, 1em 3em 0 0 #f6c4a9, 2em 4em 0 0 #f6c4a9, 1em 4em 0 0 #c82129, 0 4em 0 0 #c82129, 3em 4em 0 0 #c82129, 4em 4em 0 0 #c82129, 5em 4em 0 0 #c82129, 6em 4em 0 0 #a31c22, 6em 5em 0 0 #084267, 6em 6em 0 0 #084267, 6em 7em 0 0 #efb286, 5em 7em 0 0 #00609d, 5em 6em 0 0 #00609d, 5em 5em 0 0 #00609d, 4em 5em 0 0 #00609d, 4em 6em 0 0 #00609d, 4em 7em 0 0 #00609d, 3em 7em 0 0 #00609d, 2em 7em 0 0 #00609d, 1em 7em 0 0 #00609d, 0 7em 0 0 #00609d, 0 6em 0 0 #00609d, 1em 6em 0 0 #00609d, 1em 5em 0 0 #00609d, 0 5em 0 0 #00609d, -1em 5em 0 0 #00609d, -1em 6em 0 0 #0a4361, -1em 7em 0 0 #fcbfad, 0 8em 0 0 #fdce04, 1em 8em 0 0 #c3212e, 2em 8em 0 0 #fdce04, 3em 8em 0 0 #fdce04, 4em 8em 0 0 #c3212e, 5em 8em 0 0 #fdce04, 5em 9em 0 0 #004b60, 5em 10em 0 0 #a31c23, 4em 10em 0 0 #c22629, 4em 9em 0 0 #005d96, 3em 9em 0 0 #992122, 2em 9em 0 0 #992122, 1em 9em 0 0 #005e9e, 0 9em 0 0 #005e9e, 0 10em 0 0 #ca2126, 1em 10em 0 0 #ca2126, 4em 0 0 0 #f7c4a9, 4em 1em 0 0 #f7c4a9, -3em -2em 0 0 #f7c4a9, -3em -1em 0 0 #f7c4a9, -3em 0 0 0 #f7c4a9, -3em 1em 0 0 #f7c4a9, -2em 2em 0 0 #f7c4a9, -1em 2em 0 0 #f7c4a9, 0 2em 0 0 #f7c4a9, 1em 2em 0 0 #f7c4a9, 2em 2em 0 0 #f7c4a9, 3em 2em 0 0 #f7c4a9, 4em 2em 0 0 #e8b290, 5em 1em 0 0 #e8b290, 6em 1em 0 0 #e8b290, 6em 0 0 0 #e8b290, 6em -1em 0 0 #e8b290, 6em -2em 0 0 #e8b290, 6em -3em 0 0 #e8b290, 6em -5em 0 0 #0e1434, 5em -6em 0 0 #0e1434, 4em -6em 0 0 #0e1434, 3em -6em 0 0 #0e1434, 2em -6em 0 0 #0e1434, 1em -6em 0 0 #0e1434, 0 -6em 0 0 #0e1434, -1em -6em 0 0 #0e1434, 2em 5em 0 0 #c42521, 2em 6em 0 0 #ffcb00, 3em 5em 0 0 #ffcb00, 3em 6em 0 0 #c42521, 7em 6em 0 0 #7f1517, 7em 5em 0 0 #7f1517, 7em 7em 0 0 #7f1517, 6em 9em 0 0 #7f1517, 6em 8em 0 0 #7f1517, 7em 8em 0 0 #7f1517, 8em 6em 0 0 #a31c20, 8em 7em 0 0 #a31c20, 8em 8em 0 0 #cb2026, 9em 8em 0 0 #a41b23, 8em 9em 0 0 #a41b23, 7em 9em 0 0 #a41b23;
+  height: 1em;
+  margin-top: 10em;
+  width: 1em;
+}

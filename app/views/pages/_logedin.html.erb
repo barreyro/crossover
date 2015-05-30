@@ -1,5 +1,6 @@
 <div class='userInfoCont'>
-  <h4 id='userMsg'>Welcome, <%= current_user.first_name %>!</h4>
-  <%= button_to "Log Out",  logout_path, method: :get %>
-  <%= button_to "Home",  root_path, method: :get %>
+  <h4 id='userMsg'>Welcome, <%= current_user.first_name %>!</h4><br>
+  <div class='homenav'>
+    <%= button_to "Home",  root_path, method: :get, class: 'navbutton' %> <%= button_to "Log Out",  logout_path, method: :get, class: 'navbutton' %>
+  </div>
 </div>

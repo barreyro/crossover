@@ -1,11 +1,11 @@
 <div class='userInfoCont'>
 
-  <h4 id='userMsg'>Login</h4>
+  <h4 id='userMsg'>Login</h4><br>
    <%= form_for :user, url: '/login', method: :post do |f| %>
-     <%= f.text_field :email, placeholder: 'email' %>
-     <%= f.text_field :password, placeholder: 'password', type: 'password' %>
-     <%= f.submit 'Login' %>
+     <%= f.text_field :email, placeholder: 'email' %><br><br>
+     <%= f.text_field :password, placeholder: 'password', type: 'password' %><br><br>
+     <%= button_tag "Register",  action: '/register', method: :get, id: 'registerNow', class: 'navbutton' %>
+     <%= f.submit 'Login', class: 'navbutton' %>
    <% end %>
-   <%= button_tag "Register Now",  action: '/register', method: :get, id: 'registerNow' %>
 
 </div>
