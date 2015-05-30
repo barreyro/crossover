@@ -1,10 +1,10 @@
 <div class='userInfoCont'>
-  <h4 id='userMsg'>Sign up here:</h4>
+  <h4 id='userMsg'>Sign up here:</h4><br>
   <%= form_for :user, url: '/register', method: :post, id: 'registerBox' do |f| %>
-    <span id='signupform'> <%= f.text_field :first_name, placeholder: 'First name' %> <%= f.text_field :last_name, placeholder: 'Last name' %></span>
+    <span id='signupform'> <%= f.text_field :first_name, placeholder: 'first name' %> <%= f.text_field :last_name, placeholder: 'last name' %></span>
 
     <%= f.text_field :email, placeholder: 'email' %>
-    <%= f.text_field :password, placeholder: 'password', type: 'password' %><br>
+    <%= f.text_field :password, placeholder: 'password', type: 'password' %><br><br>
     <%= f.submit 'Register', class: 'navbutton' %>
     <%= button_tag "Login",  action: '/login', method: :get, id: 'loginNow', class: 'navbutton'%>
   <% end %>
