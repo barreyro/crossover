@@ -14,14 +14,14 @@
  *= require_self
  */
 
- body {
+ body{
   background-image: url(/assets/stone.png);
   background-color: #2ecc71;
   background-repeat: repeat;
   color: white;
  }
 
-.wrapper {
+.wrapper{
   width: 100%;
   height: 100%;
 }
@@ -31,48 +31,62 @@
   text-align: right;
 }
 .container {
-  width: 90%;
+  width: 95%;
   height: 100%;
   text-align: center;
   margin-left: 5%;
-}
-
-.container #friends{
-  width: 48%;
-  position: relative;
-  float: left;
-  text-align: center;
-  border: 3px solid #B0C4DE;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
+  margin-top: 5%;
 }
 .container #profile{
-  width: 48%;
-  position: relative;
-  float: right;
+  width: 58%;
+  float: left;
 }
-
-.container #values{
-  text-align: center;
-  border: 3px solid #B0C4DE;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-}
-
 .container #bio{
   text-align: center;
-  border: 3px solid #B0C4DE;
+  border: 3px solid black;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   margin-bottom: 20px;
   font-family: 'Muli', sans-serif;
   color: #1c6551;
+  background-color: #ecf0f1;
 }
 
 .container #bio p{
   font-family: 'Muli', sans-serif;
   margin: 20px;
   color: #1c6551;
+  border: 3px dotted black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.container #friends{
+  width: 38%;
+  margin-right: 10px;
+  float: right;
+  text-align: center;
+  border: 3px solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: 'Muli', sans-serif;
+  color: red !important;
+  background-color: #c0392b;
+}
+
+.container #values{
+  text-align: center;
+  border: 3px solid black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: 'Muli', sans-serif;
+  color: #1c6551;
+  background-color: #ecf0f1;
 }
 
 .container #values p{
@@ -88,8 +102,15 @@
   min-height: 2em;
   font-family: 'Muli', sans-serif !important;
 }
+
+.searchButton{
+  background-color: #7f8c8d;
+  border: none;
+  min-height: 2em;
+  font-family: 'Muli', sans-serif !important;
+}
 .main {
-  padding-top: 70px;
+  padding-top: 10px;
 }
 .userInfoCont{
   width: 30%;
@@ -99,6 +120,10 @@
 }
 .signupform{
   display: inline;
+}
+
+.searchBox{
+  background-color: white !important;
 }
 
 header{
@@ -122,7 +147,7 @@ h1{
 h2{
   font-family: 'Ovo', sans-serif;
   margin: 20px;
-  color: #2ecc71;
+  color: #34495e;
   font-size: 2em;
 }
 
@@ -151,8 +176,7 @@ h3{
   font-family: 'Ovo', sans-serif;
   font-style: center;
   text-align: center;
-  font-size: 2em;
-  margin-top: 1em;
+  font-size: 3em;
   font-weight: 1000;
   color: white;
 }
@@ -165,7 +189,6 @@ h3{
 }
 
 #value_words a {
-
   text-decoration: none;
 }
 #value_words a:hover {
@@ -176,7 +199,6 @@ h3{
   color: #2D4957;
   text-decoration: none;
 }
-
 
 #more_value_words{
   font-family: 'Muli', sans-serif;
@@ -206,22 +228,31 @@ h4{
 .char1{
   float: left;
   width: 20%;
-  color:red;
-   font-family: 'Muli', sans-serif;
-   font-size: 20px;
+  color:white;
+  font-family: 'Muli', sans-serif;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 20px;
+}
+
+#friends h2{
+  color: white;
 }
 
 .char2{
   float: left;
-  width: 40%;
-  color: red;
-   font-family: 'Muli', sans-serif;
-    font-size: 20px;
+  width: 35%;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 20px;
 }
 
 .charfil{
+  font-family: 'Muli', sans-serif;
   float: left;
-  width:25%;
+  width:40%;
+  color: #e74c3c;
+  font-size: 21px;
 }
 
 #request_sent_p{
@@ -231,7 +262,7 @@ h4{
   font-weight: bold;
   font-size: 1em;
   text-align: center;
-  border: 1.5px solid #B0C4DE;
+  border: 1.5px solid red;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   font-family: 'Muli', sans-serif;
@@ -239,11 +270,10 @@ h4{
 }
 
 .button_to input{
-  background: transparent;
+  background: white;
   font-weight: bold;
   font-size: 1em;
   text-align: center;
-  border: 1.5px solid #B0C4DE;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   font-family: 'Muli', sans-serif;
@@ -286,7 +316,6 @@ input, textarea {
 }
 
 button{
-  background: transparent;
   font-weight: bold;
   font-size: 1em;
   text-align: center;
@@ -333,7 +362,9 @@ ul#friendlist a {
 }
 ul#friendlist a:hover {
 }
-
+.homenav{
+  display: inline;
+}
 .superman {
   margin-left: 3%;
   float: left;
