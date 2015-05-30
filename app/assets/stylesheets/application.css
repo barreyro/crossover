@@ -189,16 +189,13 @@ h3{
 }
 
 #value_words a {
-  text-decoration: none;
   color: #7f8c8d !important;
 }
 #value_words a:hover {
   color: #825741;
-  text-decoration: none;
 }
 #value_words a:visited {
   color: #7f8c8d;
-  text-decoration: none;
 }
 
 #more_value_words{
@@ -209,11 +206,9 @@ h3{
 
 #more_value_words a {
   color: #ecf0f1
-  text-decoration: none;
 }
 #more_value_words a:hover {
   color: #913499;
-  text-decoration: none;
 }
 
 h4{
@@ -387,7 +382,6 @@ select{
 
 
 a {
-  text-decoration: none;
 }
 
 a:hover {
