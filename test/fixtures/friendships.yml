@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyText
-  stock: 1
+  user_id: 
+  friend_id: 1
+  status: false
 
 two:
-  name: MyString
-  description: MyText
-  stock: 1
+  user_id: 
+  friend_id: 1
+  status: false

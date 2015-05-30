@@ -1,4 +1,4 @@
-class ValuesController < ApplicationController
+ class ValuesController < ApplicationController
   include IndexHelper
   def show
     moreValues = Value.all.shuffle[0..50]

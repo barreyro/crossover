@@ -3,7 +3,7 @@
     <div id='friends'>
       <h2>Friends</h2>
 
-      <%= button_tag 'My Friends:',  method: :get, action: '/truefriends', id: 'friendslistButton' %>   <%= button_tag 'Friend Requests',  method: :get, action: '/requests', id: 'friendrequestButton' %>
+      <%= button_tag 'All Friends',  method: :get, action: '/truefriends', id: 'friendslistButton' %>   <%= button_tag 'Friend Requests',  method: :get, action: '/requests', id: 'friendrequestButton' %>
 
       <%= form_tag('/search', method: :get, id: 'search') do %>
         <%= text_field_tag :email, nil, placeholder: 'search by email' %>
@@ -21,13 +21,12 @@
         <%= button_tag 'Save Change', method: :put, action: '/profile', id: 'bioEdit' %>
 
       </div>
-      <div id='endorsements'>
-        <h2>Your Endorsements</h2>
+      <div id='values'>
+        <h2>Your values</h2>
         <p><%= your_values.map {|v|v.word}.join(', ') %></p>
       </div>
     </div>
   <% else %>
-    <p id="intro">Have your friends endorse your skills.<br>By knowing what your strengths and weaknesses are, you improve as a friend, programmer, or overall person. <br>
-    </p>
+    <p id="intro">Endorse your friends' skills.<br> By knowing what your strengths & weaknesses are, you improve as a friend, programmer, and person.</p>
   <% end %>
-</div>——
+</div>

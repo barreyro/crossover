@@ -2,10 +2,10 @@
 
   <h4 id='userMsg'>Login</h4>
    <%= form_for :user, url: '/login', method: :post do |f| %>
-     <%= f.text_field :email, placeholder: 'email' %>
-     <%= f.text_field :password, placeholder: 'password', type: 'password' %>
-     <%= f.submit 'Login' %>
+     <%= f.text_field :email, placeholder: 'email' %><br>
+     <%= f.text_field :password, placeholder: 'password', type: 'password' %><br>
+     <%= button_tag "Register",  action: '/register', method: :get, id: 'registerNow', class: 'navbutton' %>
+     <%= f.submit 'Login', class: 'navbutton' %>
    <% end %>
-   <%= button_tag "Register Now",  action: '/register', method: :get, id: 'registerNow' %>
 
 </div>

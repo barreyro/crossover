@@ -3,7 +3,7 @@
  * listed below.
  *
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any styles
@@ -13,3 +13,292 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  background-color: white;
+  color: #2ecc71;
+ }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navright{
+  width: 30vh;
+  text-align: right;
+  float: right;
+  margin-right: 2em;
+}
+.container {
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.container #friends{
+  width: 48%;
+  position: relative;
+  float: left;
+  text-align: center;
+  border: 3px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.container #profile{
+  width: 48%;
+  position: relative;
+  float: right;
+}
+
+.container #values{
+  text-align: center;
+  border: 3px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.container #bio{
+  text-align: center;
+  border: 3px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-bottom: 20px;
+  font-family: 'Muli', sans-serif;
+  color: #1c6551;
+}
+
+.container #bio p{
+  font-family: 'Muli', sans-serif;
+  margin: 20px;
+  color: #1c6551;
+}
+
+.container #values p{
+  font-family: 'Muli', sans-serif;
+  margin: 20px;
+  color: #1c6551;
+}
+
+.navbutton{
+  background-color: #ecf0f1;
+  border: none;
+  font-size: 12px !important;
+  min-height: 2em;
+}
+
+.userInfoCont{
+  width: 30%;
+  padding-right: 20px ;
+  float: right;
+  text-align: right;
+}
+.signupform{
+  display: inline;
+}
+
+header{
+  background-color: white;
+  margin: 10px;
+  border-bottom: 2px solid #B0C4DE;
+  display: inline-block;
+  width: 100%;
+  height: 12vh;
+}
+
+h1{
+  font-family: 'Ovo', sans-serif;
+  color: #2ecc71;
+  position: relative;
+  float: left;
+  font-size: 3em;
+  margin: 20px;
+}
+
+h2{
+  font-family: 'Ovo', sans-serif;
+  margin: 20px;
+  color: #2ecc71;
+  font-size: 2em;
+}
+
+h3{
+  font-family: 'Muli', sans-serif;
+  font-size: 1em;
+}
+
+#intro{
+  font-family: 'Muli', sans-serif;
+  font-size: 3em;
+  margin-top: 5em;
+  font-weight: 1000;
+  font-weight: bolder;
+  text-decoration: bold;
+  /*-webkit-text-stroke: 0.001px #5B80B0;*/
+  color: white;
+  text-shadow:
+      2.5px 2.5px 1px #5A7AA3,
+    -1px -1px 1px #5A7AA3,
+     1px -1px 1px #5A7AA3,
+     -1px 1px 1px #5A7AA3,
+      2px 2px 1px #5A7AA3;
+}
+
+
+
+#value_words{
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5em;
+  margin: 20px;
+  color: #416C82;
+}
+
+#value_words a {
+
+  text-decoration: none;
+}
+#value_words a:hover {
+  color: #825741;
+  text-decoration: none;
+}
+#value_words a:visited {
+  color: #2D4957;
+  text-decoration: none;
+}
+
+
+#more_value_words{
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5em;
+  margin: 20px;
+}
+
+#more_value_words a {
+  color: #6B3E87;
+  text-decoration: none;
+}
+#more_value_words a:hover {
+  color: #913499;
+  text-decoration: none;
+}
+
+h4{
+  font-family: 'Muli', sans-serif;
+  font-size: 1.3em;
+}
+
+
+#request_sent_p{
+  margin: 0 auto;
+  width: 160px;
+  background: transparent;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border: 1.5px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  padding: 5px;
+}
+
+.button_to input{
+  background: transparent;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border: 1.5px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 10px;
+  padding: 5px;
+
+}
+
+#search input{
+  background: transparent;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border: 1.5px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 10px;
+}
+
+
+
+#friendlist .button_to input{
+  background: transparent;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+}
+
+
+input, textarea {
+  line-height: 1em;
+  font-size: 1em;
+  font-family: 'Muli', sans-serif;
+  border: 3px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+button{
+  background: transparent;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border: 1.5px solid #B0C4DE;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 10px;
+}
+
+select{
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid #B0C4DE;
+  background: transparent;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ececec;
+  text-decoration: underline;
+}
+
+ul#friendlist li {
+  position: relative;
+  margin: 10px auto;
+  font-family: 'Muli', sans-serif;
+}
+
+
+ul#friendlist li h3 {
+  position: absolute;
+  bottom: -18px;
+  left: 17px;
+  font-size: 2em;
+}
+ul#friendlist a {
+  font-size: 1.5em;
+  color: #ccc;
+}
+ul#friendlist a:hover {
+}
+

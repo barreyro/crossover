@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class WidgetTest < ActiveSupport::TestCase
+class UserValueTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
