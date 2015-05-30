@@ -15,8 +15,7 @@
  */
 
  body {
-  /*background-image: url(/assets/stone.png);
-  */
+  background-image: url(/assets/stone.png);
   background-color: #2ecc71;
   background-repeat: repeat;
   color: white;
@@ -89,7 +88,9 @@
   min-height: 2em;
   font-family: 'Muli', sans-serif !important;
 }
-
+.main {
+  padding-top: 70px;
+}
 .userInfoCont{
   width: 30%;
   padding-right: 1.5%;
@@ -103,7 +104,6 @@
 header{
   background-color: transparent;
   margin: 10px;
-  border-bottom: 2px solid #B0C4DE;
   display: inline-block;
   width: 100%;
   height: 12vh;
@@ -132,7 +132,6 @@ h3{
 }
 
 .intro{
-
   overflow: hidden;
   min-height: 100px;
   background-color: transparent;
@@ -141,10 +140,9 @@ h3{
   margin-right: auto;
   font-size: 1.5em;
   margin-top: 1em ;
-  padding-top: 1em;
+  padding-top: 1.5em;
   width: 60%;
-  color: black;
-
+  color: white;
 }
 
 #introq{
@@ -156,7 +154,7 @@ h3{
   font-size: 2em;
   margin-top: 1em;
   font-weight: 1000;
-  color: black;
+  color: white;
 }
 
 #value_words{
@@ -208,11 +206,17 @@ h4{
 .char1{
   float: left;
   width: 20%;
+  color:red;
+   font-family: 'Muli', sans-serif;
+   font-size: 20px;
 }
 
 .char2{
   float: left;
   width: 40%;
+  color: red;
+   font-family: 'Muli', sans-serif;
+    font-size: 20px;
 }
 
 .charfil{
