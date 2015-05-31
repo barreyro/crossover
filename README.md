@@ -1,8 +1,3 @@
-# Know-Your-Values-on-Rails
+# Endorse-Me
 
-
-Knowing your own values is really important for your social and professional life. Ask your friends for your values to develop them.
-
-Test with email: a@a.com, password: a
-
-https://know-your-values.herokuapp.com/
+Find what skills others think you excel at. Created with Ruby on Rails and JavaScript.
