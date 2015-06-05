@@ -52,6 +52,4 @@ class FriendsController < ApplicationController
 
     render partial: 'friends/friendslist', locals: {friends: friends, button: "unfriend"}
   end
-
-
 end
