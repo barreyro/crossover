@@ -7,7 +7,6 @@
     render partial: '/values/possiblevalues', locals: {moreValues: moreValues, friend: friend, values: values}
   end
 
-
   def add
     if params[:value_id]
       UserValue.find_or_create_by(user_id: params[:id], value_id: params[:value_id])

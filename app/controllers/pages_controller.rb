@@ -22,7 +22,6 @@ class PagesController < ApplicationController
     render nothing: true
   end
 
-
   def register
     render partial: 'register'
   end
@@ -43,11 +42,8 @@ class PagesController < ApplicationController
     redirect_to '/'
   end
 
-
 private
   def user_params
     params.require(:user).permit(:first_name, :last_name, :email, :password, :salt, :encrypted_password)
   end
-
-
 end
