@@ -1,3 +1,3 @@
-class ValuesController < ApplicationController
+class UsersController < ApplicationController
   include IndexHelper
 end
