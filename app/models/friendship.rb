@@ -3,11 +3,11 @@ class Friendship < ActiveRecord::Base
   belongs_to :friend, class_name: "User"
   validate :self_add_friend
 
-   def self_add_friend
-     if friend_id == user_id
-       errors.add(:friend_id, 'cannot add yourself')
-     end
-   end
+  def self_add_friend
+    if friend_id == user_id
+      errors.add(:friend_id, 'You cannot add yourself.')
+    end
+  end
 
   protected
   before_create do
